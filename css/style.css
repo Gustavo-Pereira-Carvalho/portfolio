@@ -59,17 +59,30 @@ h2 {
   margin-bottom: 0.5rem;
   color: #e6edf3;
 }
+.print-projeto {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  box-shadow: 0 0 8px rgba(88, 166, 255, 0.2);
+}
 .projeto p {
   color: #8b949e;
+  margin-bottom: 1rem;
 }
 .projeto a {
-  color: #58a6ff;
+  color: #fff;
   text-decoration: none;
   display: inline-block;
-  margin-top: 0.5rem;
+  margin-right: 10px;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  background-color: #2383ff;
+  transition: background-color 0.3s ease;
+  font-weight: 600;
 }
 .projeto a:hover {
-  text-decoration: underline;
+  background-color: #0a62d1;
 }
 footer {
   background-color: #0d1117;
@@ -94,5 +107,8 @@ footer {
   }
   h2 {
     font-size: 1.5rem;
+  }
+  .print-projeto {
+    max-width: 100%;
   }
 }
