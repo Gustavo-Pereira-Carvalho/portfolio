@@ -1,115 +1,155 @@
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-body {
-  font-family: 'Roboto', sans-serif;
-  background-color: #0d1117;
-  color: #e6edf3;
-  line-height: 1.6;
-}
-header {
-  background: linear-gradient(90deg, #1f6feb, #0d1117);
-  padding: 3rem 2rem;
-  text-align: center;
-}
-header h1 {
-  font-size: 3rem;
-  margin-bottom: 0.5rem;
-}
-header p {
-  font-size: 1.2rem;
-  color: #c9d1d9;
-}
-.links a {
-  color: #58a6ff;
-  text-decoration: none;
-  margin: 0 10px;
-  font-weight: bold;
-}
-.links a:hover {
-  text-decoration: underline;
-}
-section {
-  max-width: 1000px;
-  margin: 3rem auto;
-  padding: 0 2rem;
-}
-h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  color: #58a6ff;
-  border-bottom: 2px solid #30363d;
-  padding-bottom: 0.5rem;
-}
-.projeto {
-  background-color: #161b22;
-  border: 1px solid #30363d;
-  border-radius: 10px;
-  padding: 1.5rem;
-  margin-bottom: 1.5rem;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.projeto:hover {
-  transform: scale(1.02);
-  box-shadow: 0 0 10px rgba(88, 166, 255, 0.2);
-}
-.projeto h3 {
-  margin-bottom: 0.5rem;
-  color: #e6edf3;
-}
-.print-projeto {
-  width: 100%;
-  max-width: 500px;
-  border-radius: 8px;
-  margin-bottom: 1rem;
-  box-shadow: 0 0 8px rgba(88, 166, 255, 0.2);
-}
-.projeto p {
-  color: #8b949e;
-  margin-bottom: 1rem;
-}
-.projeto a {
-  color: #fff;
-  text-decoration: none;
-  display: inline-block;
-  margin-right: 10px;
-  padding: 0.5rem 1rem;
-  border-radius: 6px;
-  background-color: #2383ff;
-  transition: background-color 0.3s ease;
-  font-weight: 600;
-}
-.projeto a:hover {
-  background-color: #0a62d1;
-}
-footer {
-  background-color: #0d1117;
-  color: #8b949e;
-  text-align: center;
-  padding: 2rem 1rem;
-  font-size: 0.9rem;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-@media (max-width: 768px) {
-  header h1 {
-    font-size: 2rem;
-  }
-  header p {
-    font-size: 1rem;
-  }
-  section {
-    padding: 0 1rem;
-  }
-  .projeto {
-    padding: 1rem;
-  }
-  h2 {
-    font-size: 1.5rem;
-  }
-  .print-projeto {
-    max-width: 100%;
-  }
+body {
+  background: #0f172a;
+  color: #e5e7eb;
+  line-height: 1.6;
+}
+
+/* HERO */
+.hero {
+  padding: 100px 20px;
+  text-align: center;
+  background: linear-gradient(135deg, #2563eb, #1e40af);
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 0 auto 30px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* BOTÕES */
+.btn {
+  padding: 15px 35px;
+  background: #22c55e;
+  color: #052e16;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #16a34a;
+}
+
+.btn.secondary {
+  background: transparent;
+  border: 2px solid #e5e7eb;
+  color: #e5e7eb;
+}
+
+/* SEÇÕES */
+section {
+  padding: 80px 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+section.dark {
+  background: #020617;
+  border-top: 1px solid #1e293b;
+  border-bottom: 1px solid #1e293b;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2.2rem;
+  color: #93c5fd;
+}
+
+.center-text {
+  text-align: center;
+  max-width: 750px;
+  margin: auto;
+}
+
+/* CARDS */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+.card {
+  background: #0f172a;
+  padding: 30px;
+  border-radius: 12px;
+  border: 1px solid #1e293b;
+}
+
+/* PREÇO */
+.price {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 1.2rem;
+}
+
+/* PROJETOS */
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.project {
+  background: #020617;
+  padding: 25px;
+  border-radius: 12px;
+  border: 1px solid #1e293b;
+}
+
+.project h3 {
+  margin-bottom: 10px;
+  color: #38bdf8;
+}
+
+.project-links {
+  margin-top: 15px;
+  display: flex;
+  gap: 15px;
+}
+
+.project-links a {
+  color: #38bdf8;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* CTA */
+.cta {
+  text-align: center;
+  background: #020617;
+}
+
+.cta p {
+  margin-bottom: 25px;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 25px;
+  font-size: 0.85rem;
+  color: #94a3b8;
+  background: #020617;
 }
