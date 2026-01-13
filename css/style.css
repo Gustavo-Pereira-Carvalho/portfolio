@@ -7,7 +7,7 @@
 }
 
 body {
-  background: radial-gradient(circle at top, #020617, #020617 40%, #020617);
+  background: #020617;
   color: #e5e7eb;
   line-height: 1.7;
 }
@@ -23,14 +23,12 @@ body {
   text-align: center;
   background:
     radial-gradient(circle at 20% 20%, #1e3a8a55, transparent 40%),
-    radial-gradient(circle at 80% 30%, #2563eb44, transparent 40%),
-    linear-gradient(135deg, #020617, #020617);
+    radial-gradient(circle at 80% 30%, #2563eb44, transparent 40%);
 }
 
 .hero h1 {
   font-size: clamp(2.8rem, 5vw, 4rem);
   font-weight: 800;
-  letter-spacing: -1px;
 }
 
 .subtitle {
@@ -62,7 +60,6 @@ body {
 
 .btn:hover {
   transform: translateY(-3px);
-  box-shadow: 0 15px 40px #22c55e88;
 }
 
 .btn.secondary {
@@ -70,10 +67,6 @@ body {
   color: #e5e7eb;
   border: 2px solid #334155;
   box-shadow: none;
-}
-
-.btn.secondary:hover {
-  background: #020617;
 }
 
 /* SEÇÕES */
@@ -84,7 +77,6 @@ section {
 }
 
 section.dark {
-  background: linear-gradient(180deg, #020617, #020617);
   border-top: 1px solid #1e293b;
   border-bottom: 1px solid #1e293b;
 }
@@ -116,34 +108,15 @@ h2 {
 }
 
 .card {
-  background: linear-gradient(180deg, #020617, #020617);
   padding: 35px;
   border-radius: 20px;
   border: 1px solid #1e293b;
-  box-shadow: 0 10px 40px #020617aa;
-  transition: all 0.35s ease;
+  transition: 0.3s;
 }
 
 .card:hover {
-  transform: translateY(-8px) scale(1.02);
+  transform: translateY(-6px);
   border-color: #38bdf8;
-}
-
-.card h3 {
-  margin-bottom: 12px;
-  font-size: 1.3rem;
-}
-
-.card p {
-  color: #cbd5f5;
-}
-
-/* PREÇO */
-.price {
-  margin-top: 50px;
-  text-align: center;
-  font-size: 1.25rem;
-  color: #e0f2fe;
 }
 
 /* PROJETOS */
@@ -155,83 +128,39 @@ h2 {
 
 .project {
   position: relative;
-  background: linear-gradient(180deg, #020617, #020617);
   padding: 35px;
   border-radius: 22px;
   border: 1px solid #1e293b;
-  box-shadow: 0 15px 45px #020617bb;
-  transition: all 0.35s ease;
-}
-
-.project::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  border-radius: 22px;
-  background: linear-gradient(135deg, transparent, #38bdf833, transparent);
-  opacity: 0;
+  cursor: pointer;
   transition: 0.35s;
 }
 
-.project:hover::after {
-  opacity: 1;
-}
-
 .project:hover {
-  transform: translateY(-10px);
+  transform: translateY(-8px);
   border-color: #38bdf8;
 }
 
-.project h3 {
-  color: #7dd3fc;
-  margin-bottom: 10px;
-}
-
-.project p {
-  color: #cbd5f5;
-}
-
-/* LINKS DE PROJETO */
 .project-links {
   margin-top: 20px;
   display: flex;
   gap: 20px;
+  position: relative;
+  z-index: 2;
 }
 
 .project-links a {
-  position: relative;
-  font-weight: 700;
   color: #38bdf8;
+  font-weight: 700;
   text-decoration: none;
-}
-
-.project-links a::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: -4px;
-  width: 0;
-  height: 2px;
-  background: #38bdf8;
-  transition: width 0.3s;
-}
-
-.project-links a:hover::after {
-  width: 100%;
 }
 
 /* CTA */
 .cta {
   text-align: center;
-  background:
-    radial-gradient(circle at top, #1e3a8a44, transparent 40%),
-    linear-gradient(180deg, #020617, #020617);
 }
 
 .cta p {
   margin: 25px 0 40px;
-  font-size: 1.15rem;
-  color: #c7d2fe;
 }
 
 /* FOOTER */
@@ -240,15 +169,10 @@ footer {
   text-align: center;
   font-size: 0.85rem;
   color: #94a3b8;
-  background: #020617;
 }
 
 /* RESPONSIVO */
 @media (max-width: 600px) {
-  .hero {
-    padding-top: 100px;
-  }
-
   .hero-buttons {
     flex-direction: column;
   }
